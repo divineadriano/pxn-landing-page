@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ProxiBox</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ProxiBox">
+    <meta name="keywords" content="proxibox, proximax">
+	<link rel="icon" href="/images/pbxIcon.png">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+</head>
+
+<script>
+    function initializeFirebase(){
+        var config = {
+        apiKey: "AIzaSyAUbigpi_NUPd-Q-GjqYyO1vXRliqnem80",
+        authDomain: "proxibox-8ba90.firebaseapp.com",
+        databaseURL: "https://proxibox-8ba90.firebaseio.com/",
+        storageBucket: "gs://proxibox-8ba90.appspot.com"
+        };
+        firebase.initializeApp(config);
+    }
+</script>
+
+<script>
+    function save(){
+        var database = firebase.database();
+        var firebaseref = database.ref();
+        var subscriber = document.getElementById("subscriberEmail").value;
+        firebaseref.child("Subscribers").push().set({EmailAddress:subscriber});
+        document.getElementById("subscriberEmail").value="";
+        document.getElementById("subscriber").focus
+    }
+</script>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30" onLoad="initializeFirebase()">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/PROXIBOX LOGO_white.png" class="img-fluid" style="width:35%;height:35%;" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
+                                <li class="nav-item"><a href="#contact" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">SUBSCRIBE FOR UPDATES</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <img class="homelogo" style="height:70%;width:70%;" src="images/PROXIBOX LOGO_black.png" alt="icon">
+            <p class="tagline">File Sharing Application Utilising the ProximaX Blockchain Storage</p>
+            <a href="#features" class="btn btn-outline-light btn-lg" style="margin-top:5px;">LEARN MORE</a>
+        </div>
+    </header>
+
+    
+
+    <div class="section light-bg" id="features">
+
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>ProxiBox Features</h2>
+				<p class="card-text">Check out what you can do with Proxibox</p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/box.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>Dropbox Type Function</h4>
+                            <p>All the functionalities of Dropbox and a lot more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/nem.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>NEM Account Integration</h4>
+                            <p>Easily login using your NEM account</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/follow.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>ProxiBox Social</h4>
+                            <p>Add friend accounts and start sharing files with them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- // end .section -->
+    <div class="section bg-gradient3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="/images/functions.png">
+                </div>
+                <div class="col-lg-6">
+                    <h2 style="color:#fff;" width="80%" height="80%">Dropbox functionalities plus a lot more</h2>
+                    <p style="color:#fff;" class="mb-4">Upload, Download, View, Update, Search and Share your files on the go securely with NEM Blockchain technology</p>
+                    <a href="#contact" class="btn btn-outline-light btn-lg" style="margin-top:5px;">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section light-bg-gray pt-0">
+        <div class="container">
+            <div class="section-title">
+			<br/><br/><br/><br/>
+                <h3>ProxiBox Social</h3>
+                <p>Look up and add friend accounts associated to any namespace and share files with them</p><br/>
+                <img src="images/f1.png" class="img-fluid" style="width:10%;height:10%;">
+                <img src="images/f4.png" class="img-fluid" style="width:10%;height:10%;">
+                <img src="images/f3.png" class="img-fluid" style="width:10%;height:10%;">
+                <img src="images/f6.png" class="img-fluid" style="width:10%;height:10%;">
+                <img src="images/f2.png" class="img-fluid" style="width:10%;height:10%;">
+                <img src="images/fplus.png" class="img-fluid" style="width:10%;height:10%;">
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+
+    <div class="section bg-gradient2" id="contact">
+        <div class="container">
+            <div class="call-to-action">
+
+                <img src="images/PROXIBOX LOGO_white.png" style="width:30%;height:30%;" alt="icon"><br/><br/>
+                <p class="tagline">Subscribe to get the latest news and updates </p><br/>
+                <div class="my-6">
+                    <input class="input100" type="email" id="subscriberEmail" placeholder="Email Address"/>
+                    <button class="btn btn-primary btn-lg" id="subscribe" onClick="save()">SUBSCRIBE</button>
+                </div>
+                <!--<p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>-->
+            </div>
+        </div>
+
+    </div>
+    <footer class="text-center bg-dark">
+        <p class="mb-2"><small>COPYRIGHT © 2018. All rights reserved by <a href="https://proximax.io">ProximaX Ltd.</a></small></p>
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
