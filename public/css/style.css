@@ -223,11 +223,11 @@ header {
  /* ---- particles.js container ---- */ 
  #particles-js{  
     padding-top: 15%;
+    padding-bottom: 20%;
     background-color: transparent; 
     background-image: url("../images/bkg.jpg"); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    height:50%;
     background-position: center center; 
 } 
 
