@@ -222,6 +222,7 @@ header {
 }
  /* ---- particles.js container ---- */ 
  #particles-js{  
+     position:absolute;
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: transparent; 
