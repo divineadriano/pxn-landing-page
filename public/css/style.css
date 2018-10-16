@@ -228,7 +228,7 @@ header {
     background-image: url("../images/bkg.jpg"); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    background-position: 50% 50%; 
+    background-position: center center; 
 } 
 
 .bg-gradient3 {
