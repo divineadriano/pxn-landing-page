@@ -81,9 +81,10 @@ p.lead {
 
 .btn-primary {
     border-radius: 3px;
-    background-image: -moz-linear-gradient( 135deg, #48A48E, #0A786B 50%, #0E7674 100%);
-    background-image: -webkit-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background-image: linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image:  -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image:  -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
     font-weight: 500;
     padding: 0.6rem 2rem;
@@ -123,7 +124,7 @@ p.lead {
     background-color: #F2F9F8;
 }
 .light-bg-gray {
-    background-color: #f3f3f3;
+    background-image: url("../images/wave.jpg");
 }
 
 .section {
@@ -159,10 +160,10 @@ p.lead {
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
-    background-image: -moz-linear-gradient( 135deg, #037c78, #036f7c 50%, #0b798d 100%);
-    background-image: -webkit-linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
-    background-image: -ms-linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
-    background-image: linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
     -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
@@ -213,24 +214,13 @@ header {
 }
 
 .bg-gradient {
-    background-image: url("../images/bkg.jpg");
+    background-image: url("../images/background_Home.jpg");
     padding-top: 15%;
     padding-bottom: 20%;
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center; 
 }
- /* ---- particles.js container ---- */ 
- #particles-js{  
-     position:relative;
-    padding-top: 5%;
-    background-color: transparent; 
-    background-image: url("../images/bkg.jpg"); 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height:50%;
-    background-position: center center; 
-} 
 
 .bg-gradient3 {
     background-image: url("../images/bg2.jpg");
@@ -240,10 +230,10 @@ header {
 }
 
 .bg-gradient2 {
-    background-image: -moz-linear-gradient( 135deg, #037c78, #036f7c 50%, #0b798d 100%);
-    background-image: -webkit-linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
-    background-image: -ms-linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
-    background-image: linear-gradient( 135deg, #037c78 0%, #036f7c 50%, #0b798d 100%);
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
 }
 
 .bg-dark{
@@ -296,11 +286,11 @@ header {
 ----------------------*/
 
 .gradient-fill:before {
-    color: #fc73b4;
-    background: -moz-linear-gradient( 135deg, #48A48E, #0A786B 50%, #0E7674 100%);
-    background: -webkit-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: -ms-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
+    color: #2cb4ab;
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -326,11 +316,11 @@ header {
     content: "";
     position: absolute;
     width: 3px;
-    color: #fc73b4;
-    background: -moz-linear-gradient( 135deg, #48A48E, #0A786B 50%, #0E7674 100%);
-    background: -webkit-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: -ms-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
+    color: #2cb4ab;
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
     top: 0;
     bottom: 0;
     left: 0;
@@ -382,10 +372,10 @@ header {
 }
 
 .ui-steps li:hover .circle-icon {
-    background-image: -moz-linear-gradient( 135deg, #48A48E, #0A786B 50%, #0E7674 100%);
-    background-image: -webkit-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background-image: -ms-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background-image: linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
+    background-image: -moz-linear-gradient( 135deg, #2CB4AB , rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: -webkit-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image:  -ms-linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159) 50%,  rgb(5, 110, 103) 100%);
+    background-image: url("../images/connect.png"), linear-gradient( 135deg, #2CB4AB  0%, rgb(27, 168, 159)  50%,  rgb(5, 110, 103) 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.09);
     color: #FFF;
 }

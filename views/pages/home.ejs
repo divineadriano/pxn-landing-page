@@ -23,6 +23,7 @@
     <!-- Main css -->
     <link href="/css/style.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <script>
@@ -73,14 +74,12 @@
     </div>
 
     
-    <section id="home">
-        <div id="particles-js">
-            <div class="container mt-5 text-center" style="padding-top: 10%;">
-                <img class="homelogo" style="height:70%;width:70%;" src="images/PROXINOTE LOGO_BLACK.png" alt="icon">
+    <section id="home" class="bg-gradient">
+            <div class="container mt-5 text-center">
+                <img class="homelogo animated fadeInUp delay-1s" style="height:70%;width:70%;" src="images/PROXINOTE LOGO_BLACK.png" alt="icon">
                 <p class="tagline">Cross-Platform Note Taking Application running on NEM Blockchain</p>
                 <a href="#features" class="btn btn-outline-light btn-lg" style="margin-top:5px;">LEARN MORE</a>
             </div>
-        </div> 
     </section>
 
     
@@ -92,27 +91,61 @@
 
             <div class="section-title">
                 <h2>ProxiNote Features</h2>
-				<p class="card-text">What makes us awesome?</p>
+				<p class="card-text">What makes us ProxiNote different?</p>
             </div>
 
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/encryption.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>Encrypt and upload your notes to ProximaX n</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/notepad.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>Keep your notes private</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="media">
+                        <div class="media-body">
+                            <img src="images/blockchain.png" class="img-fluid" style="width:35%;height:35%;margin-bottom:8%;"></a>
+                            <h4>Secure your personal notes with blockchain encryption</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="section light-bg-gray" id="features">
+
+
+        <div class="container">
 
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="media">
-                        <div class="media-body">
+                        <div class="media-body" style="margin-top:8%;">
                             <h3>A more secured way of note-taking</h3>
                             <p>ProxiNote is a application designed for note taking, organizing, tasks lists, and archiving. The app allows users to create notes, which can be a piece of text. ProxiNote is cross-platform, including support for Linux, Microsoft Windows and MacOS. It utilizes ProximaX's blockchain storage making your notes more secured and immutable.</p>
-                            <img src="images/f1.png" class="img-fluid" style="width:10%;height:10%;">
-                            <img src="images/f2.png" class="img-fluid" style="width:10%;height:10%;">
-                            <img src="images/f3.png" class="img-fluid" style="width:10%;height:10%;">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 text-center">
-                    <div class="media">
-                        <div class="media-body">
-                            <img src="images/laptop.png" class="img-fluid" style="width:80%;height:80%;margin-bottom:8%;"></a>
-                        </div>
+                    <div class="media-body">
+                            <img src="images/img1.jpg" class="img-fluid animated fadeInUp delay-1s" style="margin-bottom:8%;margin-left:8%;"></a>
+                            
                     </div>
                 </div>
             </div>
@@ -125,23 +158,23 @@
 
 
     <div class="section bg-gradient2" id="contact">
-        <div class="container">
-            <div class="call-to-action">
-
-                <img src="images/PROXINOTE LOGO_BLACK.png" style="width:30%;height:30%;" alt="icon"><br/><br/>
-                <p class="tagline">Subscribe to get the latest news and updates </p><br/>
-                <div class="my-6">
-                    <input class="input100" type="email" id="subscriberEmail" placeholder="Email Address"/>
-                    <button class="btn btn-primary btn-lg" id="subscribe" onClick="save()">SUBSCRIBE</button>
+            <div class="container">
+                <div class="call-to-action">
+    
+                    <img src="images/PROXINOTE LOGO_BLACK.png" style="width:30%;height:30%;" alt="icon"><br/><br/>
+                    <p class="tagline">Subscribe to get the latest news and updates </p><br/>
+                    <div class="my-6">
+                        <input class="input100" type="email" id="subscriberEmail" placeholder="Email Address"/>
+                        <button class="btn btn-primary btn-lg" id="subscribe" onClick="save()">SUBSCRIBE</button>
+                    </div>
+                    <!--<p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>-->
                 </div>
-                <!--<p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>-->
             </div>
+    
         </div>
-
-    </div>
-    <footer class="text-center bg-dark">
-        <p class="mb-2"><small>COPYRIGHT © 2018. All rights reserved by <a href="https://proximax.io">ProximaX Ltd.</a></small></p>
-    </footer>
+        <footer class="text-center bg-dark">
+            <p class="mb-2"><small>COPYRIGHT © 2018. All rights reserved by <a href="https://proximax.io">ProximaX Ltd.</a></small></p>
+        </footer>
 
     <!-- jQuery and Bootstrap -->
     <script src="/js/jquery-3.2.1.min.js"></script>
@@ -152,6 +185,24 @@
     <script src="/js/script.js"></script>
     <script src="js/particles.min.js"></script><!-- Particles JS -->
     <script src="js/main.js"></script><!-- Main JS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
 
 </body>
 
